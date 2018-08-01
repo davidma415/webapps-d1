@@ -18,3 +18,11 @@ get '/favourites' do
   @fav_links = ['http://youtube.com', 'https://www.theplayerstribune.com/en-us','http://www.speedhunters.com/']
   erb :favourites
 end
+
+get '/' do
+  redirect to ('/home')
+end
+
+get '/gallery' do
+  redirect to ('/portfolio')
+end
